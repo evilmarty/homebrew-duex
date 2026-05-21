@@ -5,13 +5,13 @@
 class Duex < Formula
   desc "Duex is a Go-based terminal utility for visualizing and analyzing disk usage, featuring interactive navigation, accurate sizing, and real-time feedback."
   homepage "https://github.com/evilmarty/duex"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/evilmarty/duex/releases/download/v1.0.0/duex-1.0.0-darwin_amd64"
-      sha256 "843440a4341cbcd79b3d4479528f61ab1776418202cb10ab3cc181391f46e531"
+      url "https://github.com/evilmarty/duex/releases/download/v1.1.0/duex-1.1.0-darwin_amd64"
+      sha256 "90e3b2c0bdde9308cf872010764c9c1037b23b14588acaa647307dabf079ec86"
 
       define_method(:install) do
         if head?
@@ -25,8 +25,8 @@ class Duex < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/evilmarty/duex/releases/download/v1.0.0/duex-1.0.0-darwin_arm64"
-      sha256 "909e2678aeb25f2e3718875c63c80a48a98b6928bda2dd78409b3290bc837b10"
+      url "https://github.com/evilmarty/duex/releases/download/v1.1.0/duex-1.1.0-darwin_arm64"
+      sha256 "50d65bb08de7e55f9f4376cfdb1eac627fd2718a6656be222cd4aea5693100f4"
 
       define_method(:install) do
         if head?
@@ -43,8 +43,8 @@ class Duex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/evilmarty/duex/releases/download/v1.0.0/duex-1.0.0-linux_amd64"
-      sha256 "6f9b81765aaaf49d45e9655093418d2be365567da7fe23ec51806b363aa121dd"
+      url "https://github.com/evilmarty/duex/releases/download/v1.1.0/duex-1.1.0-linux_amd64"
+      sha256 "a2901d24369a3b04e666d714035f089342cd2e73d578e16bf67e6197205e4572"
       define_method(:install) do
         if head?
           ldflags = %W[
@@ -57,8 +57,8 @@ class Duex < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/evilmarty/duex/releases/download/v1.0.0/duex-1.0.0-linux_armv6"
-      sha256 "bfa239e6b5391cc4a0b9da208f4c33b3cad60728356a6e4726ebc1865db0cc61"
+      url "https://github.com/evilmarty/duex/releases/download/v1.1.0/duex-1.1.0-linux_armv6"
+      sha256 "1d8953d3f2a9db2768ba36cabf484c91ac8bcab58d82b3a2e8d4f6859a1130fb"
       define_method(:install) do
         if head?
           ldflags = %W[
@@ -71,8 +71,8 @@ class Duex < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/evilmarty/duex/releases/download/v1.0.0/duex-1.0.0-linux_arm64"
-      sha256 "214256f619f57ff33563b0ae1aa5ef39f6ed4b2e6446d4c27495662c99e0311e"
+      url "https://github.com/evilmarty/duex/releases/download/v1.1.0/duex-1.1.0-linux_arm64"
+      sha256 "e7b44586ac1d0ce3b4d181e3371c5a692ad3810fdae9f1b875d8723d4575a8d4"
       define_method(:install) do
         if head?
           ldflags = %W[
