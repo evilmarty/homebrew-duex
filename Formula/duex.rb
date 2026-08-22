@@ -7,6 +7,7 @@ class Duex < Formula
   homepage "https://github.com/evilmarty/duex"
   version "1.3.0"
   license "MIT"
+  deprecate! date: "2026-08-22", because: "it has moved to the evilmarty/tap repository"
 
   on_macos do
     if Hardware::CPU.intel?
